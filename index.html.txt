@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Recipe Website</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Recipe Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Appetizers</a></li>
+          <li><a href="#">Main Dishes</a></li>
+          <li><a href="#">Desserts</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <h2>Welcome to Recipe Website!</h2>
+      <p>Find your favorite recipes and share your own creations with others.</p>
+    </main>
+    
+    <footer>
+      <p>Copyright © 2023 Recipe Website</p>
+    </footer>
+    
+  </body>
+</html>

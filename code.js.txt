@@ -1,0 +1,32 @@
+// Get the "Add to Shopping List" buttons
+const addButtons = document.querySelectorAll('.add-to-list');
+
+// Add click event listener to each button
+addButtons.forEach((button) => {
+  button.addEventListener('click', (event) => {
+    // Get the ingredient list for the clicked recipe
+    const ingredientList = event.target.dataset.ingredients;
+    
+    // Split the ingredient list into an array of individual ingredients
+    const ingredients = ingredientList.split(',');
+    
+    // Add each ingredient to the shopping list
+    ingredients.forEach((ingredient) => {
+      const listItem = document.createElement('li');
+      listItem.textContent = ingredient.trim();
+      document.querySelector('#shopping-list').appendChild(listItem);
+    });
+  });
+});
+
+// Get the "Print Shopping List" button
+const printButton = document.querySelector('#print-list');
+
+// Add click event listener to the "Print Shopping List" button
+printButton.addEventListener('click', () => {
+  // Get the shopping list
+  const shoppingList = document.querySelector('#shopping-list');
+  
+  // Print the shopping list
+  window.print();
+});
